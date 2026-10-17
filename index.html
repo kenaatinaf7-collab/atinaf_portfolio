@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Atinaf Kena | Software Developer</title>
+
+    <meta
+        name="description"
+        content="Atinaf Kena's software development portfolio showcasing skills and projects."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body> 
+    <!-- Welcome Screen -->
+<div id="welcomeScreen" class="welcome-screen">
+
+    <div class="welcome-box">
+
+        <h1>WELLCOME TO MY PORTFOLIO</h1>
+
+        <p>Please enter your name to continue</p>
+
+        <form id="visitorForm">
+
+            <input
+                type="text"
+                id="visitorName"
+                placeholder="Enter your name"
+                required
+                maxlength="50"
+            >
+
+            <button type="submit">
+                Enter Portfolio
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">
+                ATINAF<span>.</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- Authentication buttons -->
+<div class="auth-buttons">
+    <button id="loginBtn" type="button">Login</button>
+
+    <button id="logoutBtn" type="button" hidden>
+        Logout
+    </button>
+</div>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+     <!-- Home Section -->
+<section id="home" class="hero">
+    <div class="container hero-content">
+
+        <!-- Visitor Greeting -->
+        <p id="visitorGreeting"></p>
+
+        <!-- Hero Text -->
+        <div class="hero-text">
+
+            <!-- Moving Welcome Text -->
+            <marquee
+                class="eyebrow"
+                behavior="scroll"
+                direction="right"
+                scrollamount="5"
+            >
+                WELCOME TO MY PORTFOLIO
+            </marquee>
+            <!-- Profile Card -->
+        <div class="hero-card">
+
+            <!-- Profile Photo: One Image Only -->
+            <div class="avatar">
+                <img
+                    src="images/photo_2025-09-04_21-06-17.jpg"
+                    alt="Atinaf Kena profile photo"
+                    class="profile-image"
+                >
+            </div>
+
+            <h3>Atinaf Kena</h3>
+
+            <p>Software Development Intern Applicant</p>
+
+            <div class="profile-line"></div>
+
+            <p class="profile-location">
+                Bule Hora University
+            </p>
+
+        </div>
+
+
+     <h1>
+     Hello, I'm <span>Atinaf Kena</span>
+    </h1>
+
+    <h2>
+Computer Science and Engineering Student &amp; Web Developer
+    </h2>
+
+ <p class="hero-description">
+                I am a fourth-year Computer Science and Engineering
+                student at Bule Hora University, passionate about
+                web development and building useful technology
+                solutions.
+     </p>
+
+     <!-- Hero Buttons -->
+     <div class="hero-buttons">
+     <a href="#projects" class="btn btn-primary">
+    View My Projects
+                </a>
+
+        <a href="#contact" class="btn btn-secondary">
+        Contact Me
+        </a>
+    </div>
+
+        </div>
+
+       
+
+    </div>
+</section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">GET TO KNOW ME</p>
+                    <h2>About <span>Me</span></h2>
+                </div>
+
+     <div class="about-content">
+                    <p>
+                        I am a fourth-year Computer Science and Engineering
+                        student at Bule Hora University. I enjoy learning
+                        programming, database development, and website design.
+        </p>
+
+                    <p>
+                        I have experience working with PHP, MySQL, HTML,
+                        CSS, and JavaScript through my learning and projects.
+                        I am seeking an internship where I can improve my
+                        software development skills, collaborate with a team,
+                        and contribute to real-world projects.
+                    </p>
+
+                    <div class="about-details">
+                        <div>
+                            <strong>Education</strong>
+                            <span>Computer Science and Engineering</span>
+                        </div>
+
+                        <div>
+                            <strong>University</strong>
+                            <span>Bule Hora University</span>
+                        </div>
+
+                        <div>
+                            <strong>Career Goal</strong>
+                            <span>Software Development Internship</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section section-dark">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">WHAT I WORK WITH</p>
+                    <h2>Technical <span>Skills</span></h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h3>HTML</h3>
+                        <p>Building structured web pages.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">#</div>
+                        <h3>CSS</h3>
+                        <p>Styling responsive websites.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>Adding interactive features.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">PHP</div>
+                        <h3>PHP</h3>
+                        <p>Developing server-side applications.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">DB</div>
+                        <h3>MySQL</h3>
+                        <p>Managing relational databases.</p>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon">Git</div>
+                        <h3>Git &amp; GitHub</h3>
+                        <p>Learning version control and collaboration.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">MY WORK</p>
+                    <h2>Featured <span>Projects</span></h2>
+
+                    <p class="section-description">
+                        A selection of projects demonstrating my learning
+                        and software development interests.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-number">PROJECT 01</div>
+
+                        <h3>Agri-Business Social Enterprise</h3>
+
+                        <p>
+                            A web application designed to connect farmers,
+                            customers, and investors through agricultural
+                            products and investment opportunities.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Ask About Project &rarr;
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">PROJECT 02</div>
+
+                        <h3>Student Registration System</h3>
+
+                        <p>
+                            A registration and login application that
+                            demonstrates user management and database
+                            operations.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Ask About Project &rarr;
+                        </a>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">PROJECT 03</div>
+
+                        <h3>Personal Portfolio Website</h3>
+
+                        <p>
+                            A responsive personal website presenting
+                            professional information, technical skills,
+                            and selected projects.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#contact" class="project-link">
+                            Current Portfolio
+                        </a>
+                    </article>
+
+                </div>
+
+                <p class="project-note">
+                    Note: Include only projects you have actually built.
+                    Add repository and live demo links when available.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-dark">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">LET'S CONNECT</p>
+                    <h2>Contact <span>Me</span></h2>
+
+                    <p class="section-description">
+                        I welcome opportunities to learn, collaborate,
+                        and contribute to software development projects.
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <p>
+                        Interested in discussing an internship or project?
+                        Feel free to contact me.
+                    </p>
+
+                    <!-- Replace the placeholder with your real email address -->
+                    <a href="mailto:YOUR_EMAIL@example.com"
+                       class="btn btn-primary">
+                        Send Me an Email
+                    </a>
+
+                    <!-- Replace these placeholder links with your real profiles -->
+                    <div class="social-links">
+                        <a href="https://github.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span> Atinaf Kena.
+                All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
